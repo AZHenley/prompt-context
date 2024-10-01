@@ -61,5 +61,5 @@ echo "Unstaged modified files' content has been copied to the clipboard."
 
 
 ### Usage instructions.
-# If needed, add to your path and make it executable: sudo cp git-clipper.zsh /usr/local/bin/git-clipper && sudo chmod +x /usr/local/bin/git-clipper
+# If needed, add to your bin folder and make it executable: sudo cp git-clipper.zsh /usr/local/bin/git-clipper && sudo chmod +x /usr/local/bin/git-clipper
 # Run: git-clipper
