@@ -7,16 +7,12 @@ def extract_and_copy(url):
         # Initialize the Article object.
         article = Article(url)
         
-        # Download the HTML content.
+        # Download and parse the HTML content.
         article.download()
-        
-        # Parse the downloaded content.
         article.parse()
         
-        # Get the main text content (mostly works).
+        # Get the main text content (mostly works) and copy to clipboard.
         main_text = article.text
-        
-        # Copy the main text to the clipboard.
         pyperclip.copy(main_text)
         print("Article content has been copied to the clipboard.")
         

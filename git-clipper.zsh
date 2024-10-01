@@ -24,9 +24,6 @@ cd "$REPO_ROOT"
 # Using git diff to list unstaged changes
 MODIFIED_FILES=($(git diff --name-only))
 
-# Alternatively, you can use:
-# MODIFIED_FILES=($(git ls-files -m))
-
 # Check if there are modified files
 if [[ ${#MODIFIED_FILES[@]} -eq 0 ]]; then
     echo "No unstaged modified files found."
